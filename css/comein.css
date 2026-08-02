@@ -1,0 +1,65 @@
+/* ============ Come In CTA (recurring) ============ */
+.comein{
+  padding:3.5rem 8%;
+  background:var(--white);
+  display:flex;
+  justify-content:center;
+}
+
+.comein-inner{
+  width:min(100%,720px);
+}
+
+.comein-actions{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.comein-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:0.75rem;
+  padding:0.95rem 1.35rem;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  transition:transform .2s ease, box-shadow .2s ease;
+  background:#fffdf7;
+  border:1px solid rgba(58,18,201,0.14);
+  color:var(--blue);
+  box-shadow:0 10px 26px rgba(58,18,201,0.06);
+}
+
+.comein-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px rgba(58,18,201,0.12);
+}
+
+.comein-btn-mail .comein-shape{
+  color:#7a6f1f;
+}
+
+.comein-btn-whatsapp .comein-shape{
+  color:#25D366;
+}
+
+.comein-shape{
+  width:24px;
+  height:24px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.comein-shape svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.comein-text{
+  font-size:1rem;
+}

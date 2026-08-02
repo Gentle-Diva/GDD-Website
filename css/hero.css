@@ -1,0 +1,18 @@
+/* ============ Hero Section ============ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:9rem 8% 7rem;overflow:hidden;background:#15100c}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#15100c,#1b2440,#3a2f10,#15100c);background-size:300% 300%;animation:heroGradient 22s ease-in-out infinite;z-index:0}
+@keyframes heroGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.hero-network{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+
+.hero-content{position:relative;z-index:2;max-width:700px;text-align:center}
+.hero-eyebrow{display:block;color:var(--gold);font-family:var(--font-heading);font-weight:650;font-size:2.2rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.6rem;white-space:nowrap}
+.hero-subline{color:rgba(255,255,255,0.75);font-family:var(--font-body);font-size:1.8rem;font-weight:550;margin-bottom:2.5rem}
+
+.hero h1{color:#fff;margin-bottom:2.6rem;font-size:clamp(2.25rem,4.5vw,3.25rem)}
+.hero h1 em{color:var(--gold);font-style:normal}
+
+.hero-desc{color:rgba(255,255,255,0.78);font-size:1.05rem;line-height:1.7;margin:0 auto 2.4rem;max-width:52ch}
+
+.hero-cta{display:inline-block;background:var(--gold);color:#fff;padding:0.9rem 1.8rem;border-radius:100px;font-weight:600;text-decoration:none;transition:transform .15s ease,background .2s ease}
+.hero-cta:hover{transform:translateY(-2px)}

@@ -1,0 +1,22 @@
+/* ============ Systems We've Built ============ */
+.systems{padding:6rem 8%;background:var(--white)}
+.systems-inner{max-width:900px;margin:0 auto}
+.systems-inner > h2{margin-bottom:3rem;text-align:center}
+
+.system-panel{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:2rem;padding:2.8rem 0;border-top:1px solid rgba(58,18,201,0.1)}
+.system-panel:first-of-type{border-top:none}
+
+.ba-label{font-family:var(--font-heading);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem}
+
+.before{opacity:0.75}
+.before .ba-label{color:var(--body-text)}
+.before .bullet-list li::before{background:#a3a3a3}
+
+.after{opacity:1}
+.after .ba-label{color:var(--blue)}
+.after .bullet-list li{font-weight:500}
+.after .bullet-list li::before{background:var(--blue)}
+
+.ba-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);width:26px;padding-top:2.4rem;animation:arrowPulse 1.8s ease-in-out infinite}
+.ba-arrow svg{width:100%;height:auto;display:block}
+@keyframes arrowPulse{0%,100%{transform:translateX(0);opacity:0.5}50%{transform:translateX(6px);opacity:1}}

@@ -1,0 +1,14 @@
+/* ============ Stats Add-on ============ */
+.stats{padding:3rem 8% 5rem;background:var(--white)}
+.stats-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+
+.stat-card{padding:1.4rem 1rem;text-align:center;border-radius:10px;background:rgba(58,18,201,0.04);animation:statFade 6s ease-in-out infinite}
+.stat-card:nth-child(1){animation-delay:0s}
+.stat-card:nth-child(2){animation-delay:1.5s}
+.stat-card:nth-child(3){animation-delay:3s}
+.stat-card:nth-child(4){animation-delay:4.5s}
+
+.stat-num{display:block;font-family:var(--font-heading);font-weight:800;font-size:1.4rem;color:var(--blue);margin-bottom:0.35rem}
+.stat-label{display:block;font-size:0.82rem;color:var(--body-text);opacity:0.75;line-height:1.4}
+
+@keyframes statFade{0%,100%{opacity:0.4}50%{opacity:1}}

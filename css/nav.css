@@ -1,0 +1,33 @@
+/* ============ Navigation ============ */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 6%;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(58,18,201,0.1)}
+
+.nav-brand{display:flex;align-items:center;gap:0.2rem;text-decoration:none}
+.nav-logo{height:40px;width:auto;display:block}
+
+.nav-name{display:inline-flex;gap:0.35em;font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--blue);letter-spacing:-0.01em}
+.nav-name .word{display:inline-block;opacity:0;transform:translateY(10px);animation:navWordIn .4s cubic-bezier(.2,.8,.2,1) forwards,navPulse 2.6s ease-in-out infinite}
+.nav-name .word:nth-child(1){animation-delay:0.05s,1.05s}
+.nav-name .word:nth-child(2){animation-delay:0.18s,1.18s}
+.nav-name .word:nth-child(3){animation-delay:0.31s,1.31s}
+@keyframes navWordIn{to{opacity:1;transform:translateY(0)}}
+@keyframes navPulse{0%,100%{opacity:1}50%{opacity:.68}}
+
+.nav-menu{position:relative}
+.nav-menu-btn{position:relative;width:38px;height:38px;background:none;border:none;cursor:pointer;padding:0}
+
+.nav-menu-btn .bars{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:5px;transition:opacity .2s ease}
+.nav-menu-btn .bars span{display:block;width:100%;height:2px;background:var(--blue);border-radius:2px}
+
+.nav-menu-btn .close-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s ease}
+.nav-menu-btn .close-icon span{position:absolute;width:20px;height:2px;background:var(--blue);border-radius:2px}
+.nav-menu-btn .close-icon span:first-child{transform:rotate(45deg)}
+.nav-menu-btn .close-icon span:last-child{transform:rotate(-45deg)}
+
+.nav-menu-btn[aria-expanded="true"] .bars{opacity:0}
+.nav-menu-btn[aria-expanded="true"] .close-icon{opacity:1}
+
+.nav-dropdown{position:absolute;top:calc(100% + 14px);right:0;min-width:210px;background:#ffffff;border:1px solid rgba(58,18,201,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(58,18,201,0.18);padding:0.6rem;display:flex;flex-direction:column;gap:0.2rem;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:200}
+.nav-dropdown.open{opacity:0.9;visibility:visible;transform:translateY(0)}
+
+.nav-dropdown a{padding:0.7rem 1rem;border-radius:8px;color:var(--blue);text-decoration:none;font-family:var(--font-body);font-size:0.95rem;font-weight:500;transition:background .15s ease,color .15s ease}
+.nav-dropdown a:hover{background:rgba(172,160,53,0.14);color:#7a6f1f}

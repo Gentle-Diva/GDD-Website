@@ -1,0 +1,17 @@
+/* ============ Responsive / Media Queries ============ */
+@media(max-width:700px){
+  .hero{padding:7rem 6% 4rem}
+  .hero-desc{max-width:100%}
+
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+
+  .system-panel{grid-template-columns:1fr}
+  .ba-arrow{transform:rotate(90deg);padding:0.4rem 0;width:100%}
+
+  .pain-list li{font-size:1.05rem}
+
+  .work-step-head{flex-wrap:wrap}
+
+  .comein-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:0.8rem}
+  .comein-btn{padding:0.85rem 1rem}
+}
