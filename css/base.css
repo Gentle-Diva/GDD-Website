@@ -1,6 +1,8 @@
 /* ============ Base / Reset / Variables ============ */
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
+  color-scheme: light;
+  
   --white:#ffffff(0 90% 9%);
   --blue:#4214eb;
   --gold:rgba(252, 227, 3, 0.5);
