@@ -16,7 +16,7 @@
   --ink:var(--body-text);--ink-soft:var(--body-text);--ink-muted:#6b6b64;
   --serif:var(--font-heading);--sans:var(--font-body);
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{font-family:var(--font-body);font-size:17px;line-height:1.7;color:var(--body-text);background:linear-gradient(180deg,#ffffff 0%,#f8f9ff 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 h1,h2,h3{font-family:var(--font-heading);color:var(--blue);line-height:1.15}
