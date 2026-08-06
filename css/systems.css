@@ -17,6 +17,6 @@
 .after .bullet-list li{font-weight:500}
 .after .bullet-list li::before{background:var(--blue)}
 
-.ba-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);width:26px;padding-top:2.4rem;animation:arrowPulse 1.8s ease-in-out infinite}
+.ba-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);width:30px;min-width:30px;padding-top:2.4rem;animation:arrowPulse 1.5s ease-in-out infinite}
 .ba-arrow svg{width:100%;height:auto;display:block}
-@keyframes arrowPulse{0%,100%{transform:translateX(0);opacity:0.5}50%{transform:translateX(6px);opacity:1}}
+@keyframes arrowPulse{0%,100%{transform:translateX(0);opacity:2}50%{transform:translateX(6px);opacity:2.5}}

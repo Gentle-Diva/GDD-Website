@@ -4,6 +4,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-brand{display:flex;align-items:center;gap:0.2rem;text-decoration:none}
 .nav-logo{height:40px;width:auto;display:block}
 
+.nav-right{display:flex;align-items:center;gap:0.8rem}
+
 .nav-name{display:inline-flex;gap:0.35em;font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--blue);letter-spacing:-0.01em}
 .nav-name .word{display:inline-block;opacity:0;transform:translateY(10px);animation:navWordIn .4s cubic-bezier(.2,.8,.2,1) forwards,navPulse 2.6s ease-in-out infinite}
 .nav-name .word:nth-child(1){animation-delay:0.05s,1.05s}
@@ -31,3 +33,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 .nav-dropdown a{padding:0.7rem 1rem;border-radius:8px;color:var(--blue);text-decoration:none;font-family:var(--font-body);font-size:0.95rem;font-weight:500;transition:background .15s ease,color .15s ease}
 .nav-dropdown a:hover{background:rgba(172,160,53,0.14);color:#7a6f1f}
+
+.theme-toggle{background:none;border:none;cursor:pointer;color:var(--blue);padding:0.5rem;display:flex;align-items:center;justify-content:center;width:50px;height:50px}
+.theme-toggle svg{color:var(--blue);fill:var(--blue);width:25px;height:20px}
+.theme-toggle:hover,
+.theme-toggle:focus-visible{color:var(--blue);-webkit-text-fill-color:var(--blue);}
+body.dark-mode{background:#15100c;color:#e8e6e0}
+body.dark-mode .about,body.dark-mode .pain,body.dark-mode .how-we-work,body.dark-mode .systems,body.dark-mode .stats,body.dark-mode .comein,body.dark-mode footer,body.dark-mode nav{background:#15100c;color:#e8e6e0}

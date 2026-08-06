@@ -2,13 +2,14 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   color-scheme: light;
-  --white:#ffffff;
+  
+  --white:#ffffff(0 90% 9%);
   --blue:#4214eb;
   --gold:rgba(252, 227, 3, 0.5);
   --body-text:#2a2a2a;
   --font-heading:'Plus Jakarta Sans',sans-serif;
   --font-body:'Inter',sans-serif;
-  --section-border:rgba(58, 6, 247, 0.14);
+    --section-border:rgba(58, 6, 247, 0.14);
 
   /* legacy aliases: keep sections not yet rebuilt from breaking mid-redesign */
   --cream:var(--white);
@@ -17,31 +18,8 @@
   --ink:var(--body-text);--ink-soft:var(--body-text);--ink-muted:#6b6b64;
   --serif:var(--font-heading);--sans:var(--font-body);
 }
-html{
-  scroll-behavior:smooth;
-  overflow-x:hidden;
-  background-color:var(--white);
-  color:var(--body-text);
-  color-scheme:light;
-}
-body{
-  font-family:var(--font-body);
-  font-size:17px;
-  line-height:1.7;
-  color:var(--body-text);
-  background:linear-gradient(180deg,#ffffff 0%,#f8f9ff 100%);
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-  min-height:100%;
-}
-*{color:inherit}
-input,textarea,select,button{color-scheme:light}
-
-@media (prefers-color-scheme: dark){
-  :root{color-scheme:light !important}
-  html,body{background-color:#ffffff !important;color:#2a2a2a !important}
-  body *{color:inherit !important}
-}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--font-body);font-size:17px;line-height:1.7;color:var(--body-text);background:linear-gradient(180deg,#ffffff 0%,#f8f9ff 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 h1,h2,h3{font-family:var(--font-heading);color:var(--blue);line-height:1.15}
 h1{font-size:clamp(2.75rem,6vw,4.5rem);font-weight:700;line-height:1.05}
@@ -81,3 +59,10 @@ section[id]{scroll-margin-top:90px}
 .bullet-list{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
 .bullet-list li{position:relative;padding-left:1.5rem;font-size:0.98rem;line-height:1.6}
 .bullet-list li::before{content:'';position:absolute;left:0;top:0.5em;width:8px;height:8px;background:var(--body-text);border-radius:2px;transform:rotate(45deg)}
+
+.scroll-toggle{position:fixed;bottom:28px;right:28px;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--blue);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:150;box-shadow:0 6px 18px rgba(58,18,201,0.18)}
+.scroll-toggle svg{width:22px;height:22px}
+.scroll-toggle{animation:scrollBounceDown 1.8s ease-in-out infinite}
+.scroll-toggle.at-bottom{animation:scrollBounceUp 1.8s ease-in-out infinite}
+@keyframes scrollBounceDown{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes scrollBounceUp{0%,100%{transform:translateY(0) rotate(180deg)}50%{transform:translateY(5px) rotate(180deg)}}

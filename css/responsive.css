@@ -2,12 +2,15 @@
 @media(max-width:700px){
   .about-text{text-align:left}
   .hero{padding:7rem 6% 4rem}
+  .hero-eyebrow{font-size:clamp(0.95rem,4.2vw,1.4rem);margin-bottom:0.75rem;white-space:normal;line-height:1.25}
+  .hero-subline{font-size:clamp(0.95rem,3.4vw,1.2rem);margin-bottom:1.25rem;line-height:1.35}
   .hero-desc{max-width:100%}
 
   .stats-grid{grid-template-columns:repeat(2,1fr)}
 
   .system-panel{grid-template-columns:1fr}
-  .ba-arrow{transform:rotate(90deg);padding:0.4rem 0;width:100%}
+  .ba-arrow{width:28px;min-width:28px;padding:0;margin:0.6rem auto;animation:arrowPulseMobile 1.5s ease-in-out infinite}
+@keyframes arrowPulseMobile{0%,100%{transform:rotate(90deg) translateY(0);opacity:0.55}50%{transform:rotate(90deg) translateY(5px);opacity:1}}
 
   .pain-list li{font-size:1.05rem}
 

@@ -3,7 +3,29 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavMenu();
   initHeroNetwork();
+  const scrollBtn = document.getElementById('scrollToggle');
+if (scrollBtn) {
+  function updateScrollBtn() {
+    const past = window.scrollY > (document.body.scrollHeight - window.innerHeight) / 2;
+    scrollBtn.classList.toggle('at-bottom', past);
+  }
+  updateScrollBtn();
+  window.addEventListener('scroll', updateScrollBtn);
+  scrollBtn.addEventListener('click', () => {
+    const target = scrollBtn.classList.contains('at-bottom') ? 0 : document.body.scrollHeight;
+    window.scrollTo({ top: target, behavior: 'smooth' });
+  });
+}
 });
+
+const toggle = document.getElementById('themeToggle');
+if (toggle) {
+  if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+  });
+}
 
 function initNavMenu() {
   const menuBtn = document.getElementById('navMenuBtn');
