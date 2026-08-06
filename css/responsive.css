@@ -1,5 +1,6 @@
 /* ============ Responsive / Media Queries ============ */
 @media(max-width:700px){
+  .about-text{text-align:left}
   .hero{padding:7rem 6% 4rem}
   .hero-desc{max-width:100%}
 
