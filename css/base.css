@@ -2,14 +2,13 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   color-scheme: light;
-  
-  --white:#ffffff(0 90% 9%);
+  --white:#ffffff;
   --blue:#4214eb;
   --gold:rgba(252, 227, 3, 0.5);
   --body-text:#2a2a2a;
   --font-heading:'Plus Jakarta Sans',sans-serif;
   --font-body:'Inter',sans-serif;
-    --section-border:rgba(58, 6, 247, 0.14);
+  --section-border:rgba(58, 6, 247, 0.14);
 
   /* legacy aliases: keep sections not yet rebuilt from breaking mid-redesign */
   --cream:var(--white);
@@ -18,8 +17,31 @@
   --ink:var(--body-text);--ink-soft:var(--body-text);--ink-muted:#6b6b64;
   --serif:var(--font-heading);--sans:var(--font-body);
 }
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:var(--font-body);font-size:17px;line-height:1.7;color:var(--body-text);background:linear-gradient(180deg,#ffffff 0%,#f8f9ff 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  background-color:var(--white);
+  color:var(--body-text);
+  color-scheme:light;
+}
+body{
+  font-family:var(--font-body);
+  font-size:17px;
+  line-height:1.7;
+  color:var(--body-text);
+  background:linear-gradient(180deg,#ffffff 0%,#f8f9ff 100%);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  min-height:100%;
+}
+*{color:inherit}
+input,textarea,select,button{color-scheme:light}
+
+@media (prefers-color-scheme: dark){
+  :root{color-scheme:light !important}
+  html,body{background-color:#ffffff !important;color:#2a2a2a !important}
+  body *{color:inherit !important}
+}
 
 h1,h2,h3{font-family:var(--font-heading);color:var(--blue);line-height:1.15}
 h1{font-size:clamp(2.75rem,6vw,4.5rem);font-weight:700;line-height:1.05}
