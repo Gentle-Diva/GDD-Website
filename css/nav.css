@@ -39,4 +39,3 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .theme-toggle:hover,
 .theme-toggle:focus-visible{color:var(--blue);-webkit-text-fill-color:var(--blue);}
 body.dark-mode{background:#15100c;color:#e8e6e0}
-body.dark-mode .about,body.dark-mode .pain,body.dark-mode .how-we-work,body.dark-mode .systems,body.dark-mode .stats,body.dark-mode .comein,body.dark-mode footer,body.dark-mode nav{background:#15100c;color:#e8e6e0}
