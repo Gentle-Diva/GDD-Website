@@ -14,5 +14,5 @@
 
 .hero-desc{color:rgba(255,255,255,0.78);font-size:1.05rem;line-height:1.7;margin:0 auto 2.4rem;max-width:52ch}
 
-.hero-cta{display:inline-block;background:var(--gold);color:#fff;padding:0.9rem 1.8rem;border-radius:100px;font-weight:600;text-decoration:none;transition:transform .15s ease,background .2s ease;max-width:100%}
+.hero-cta{display:inline-block;background:var(--gold-solid);color:#fff;padding:0.9rem 1.8rem;border-radius:100px;font-weight:600;text-decoration:none;transition:transform .15s ease,background .2s ease;max-width:100%}
 .hero-cta:hover{transform:translateY(-2px)}
