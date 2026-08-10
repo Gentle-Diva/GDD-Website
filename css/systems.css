@@ -8,13 +8,13 @@
 
 .ba-label{font-family:var(--font-heading);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem}
 
-.before{opacity:0.75}
+.before{opacity:0.70}
 .before .ba-label{color:var(--body-text)}
 .before .bullet-list li::before{background:#a3a3a3}
 
-.after{opacity:1}
+.after{opacity:0.95}
 .after .ba-label{color:var(--blue)}
-.after .bullet-list li{font-weight:500}
+.after .bullet-list li{font-weight:400}
 .after .bullet-list li::before{background:var(--blue)}
 
 .ba-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold-solid);width:30px;min-width:30px;padding-top:2.4rem;animation:arrowPulse 1.5s ease-in-out infinite}

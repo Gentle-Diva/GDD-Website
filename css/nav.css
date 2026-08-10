@@ -29,7 +29,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-menu-btn[aria-expanded="true"] .close-icon{opacity:1}
 
 .nav-dropdown{position:absolute;top:calc(100% + 14px);right:0;min-width:210px;background:#ffffff;border:1px solid rgba(58,18,201,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(58,18,201,0.18);padding:0.6rem;display:flex;flex-direction:column;gap:0.2rem;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:200}
-.nav-dropdown.open{opacity:0.9;visibility:visible;transform:translateY(0)}
+.nav-dropdown.open{opacity:1;visibility:visible;transform:translateY(0)}
 
 .nav-dropdown a{padding:0.7rem 1rem;border-radius:8px;color:var(--blue);text-decoration:none;font-family:var(--font-body);font-size:0.95rem;font-weight:500;transition:background .15s ease,color .15s ease}
 .nav-dropdown a:hover{background:rgba(172,160,53,0.14);color:#7a6f1f}
