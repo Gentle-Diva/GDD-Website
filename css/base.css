@@ -6,11 +6,11 @@
   --gold-solid:#c9a227;
   --white:#ffffff;
   --blue:#4957d0;
-  --gold:rgba(252, 227, 3, 0.5);
+  --gold:rgba(201, 162, 39, 0.5);
   --body-text:#2a2a2a;
   --font-heading:'Plus Jakarta Sans',sans-serif;
   --font-body:'Inter',sans-serif;
-    --section-border:rgba(58, 6, 247, 0.14);
+    --section-border:rgba(73, 87, 208, 0.12);
 
   /* legacy aliases: keep sections not yet rebuilt from breaking mid-redesign */
   --cream:var(--white);
@@ -69,11 +69,11 @@ section[id]{scroll-margin-top:90px}
 @keyframes scrollBounceUp{0%,100%{transform:translateY(0) rotate(180deg)}50%{transform:translateY(5px) rotate(180deg)}}
 
 body.dark-mode{
-  --white:#15100c;
+  --white:#111827;
   --body-text:#e8e6e0;
-  --card-bg:#1e1912;
-  background:#15100c;
-  --section-border:rgba(255,255,255,0.14);
+  --card-bg:#171f32;
+  background:#111827;
+  --section-border:rgba(255,255,255,0.10);
 }
 body.dark-mode .work-step:hover{
   background:var(--card-bg);
@@ -81,6 +81,6 @@ body.dark-mode .work-step:hover{
 }
 
 body.dark-mode .work-step{box-shadow:none;border-color:rgba(255,255,255,0.08)}
-body.dark-mode .work-step:hover{box-shadow:0 0 24px rgba(66,20,235,0.35)}
+body.dark-mode .work-step:hover{box-shadow:0 0 24px rgba(73,87,208,0.25)}
 
 h1,h2,h3,.nav-name,.section-label,.bullet-list li::before,.hero-cta,.stat-num,.theme-toggle svg,.comein-text,.connect-text{forced-color-adjust:none;}

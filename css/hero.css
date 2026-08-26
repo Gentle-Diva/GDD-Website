@@ -1,6 +1,6 @@
 /* ============ Hero Section ============ */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:9rem 8% 7rem;overflow:hidden;background:#15100c}
-.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#15100c,#1b2440,#3a2f10,#15100c);background-size:300% 300%;animation:heroGradient 22s ease-in-out infinite;z-index:0}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:9rem 8% 7rem;overflow:hidden;background:#0F1628}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#0F1628,rgba(73,87,208,0.22),rgba(201,162,39,0.18),#0F1628);background-size:300% 300%;animation:heroGradient 17s ease-in-out infinite;z-index:0}
 @keyframes heroGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
 .hero-network{position:absolute;inset:0;width:100%;height:100%;z-index:1}

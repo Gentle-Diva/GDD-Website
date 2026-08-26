@@ -23,7 +23,9 @@
   transform:translateY(-4px);
   box-shadow:0 16px 36px rgba(58,18,201,0.12);
   border-color:rgba(58,18,201,0.24);
-  background:linear-gradient(135deg,#fffef2 0%,#aad9e0 100%);
+  background:linear-gradient(
+    135deg,rgba(73,87,208,0.08),rgba(73,87,208,0.18)
+  );
 }
 
 .work-step:first-child{
