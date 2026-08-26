@@ -1,5 +1,5 @@
 /* ============ Navigation ============ */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 6%;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(58,18,201,0.1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 6%;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(73,87,208,0.1)}
 
 .nav-brand{display:flex;align-items:center;gap:0.2rem;text-decoration:none}
 .nav-logo{height:40px;width:auto;display:block}

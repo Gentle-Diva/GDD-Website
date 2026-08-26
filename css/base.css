@@ -68,12 +68,28 @@ section[id]{scroll-margin-top:90px}
 @keyframes scrollBounceDown{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @keyframes scrollBounceUp{0%,100%{transform:translateY(0) rotate(180deg)}50%{transform:translateY(5px) rotate(180deg)}}
 
+
 body.dark-mode{
   --white:#111827;
+  --blue:#7C9CFF;
   --body-text:#e8e6e0;
   --card-bg:#171f32;
   background:#111827;
   --section-border:rgba(255,255,255,0.10);
+}
+body.dark-mode nav{
+  background: var(--white);
+  color: var(--body-text);
+  box-shadow:0 4px 16px rgba(0,0,0,0.35);
+  border-bottom:1px solid rgba(0,0,0,0.15);
+}
+body.dark-mode .comein-btn {
+  background: var(--card-bg);  
+  color: var(--body-text);      
+  border-color: var(--blue);    
+}
+body.dark-mode .connect-text{
+  color: #1a1a1a;
 }
 body.dark-mode .work-step:hover{
   background:var(--card-bg);
