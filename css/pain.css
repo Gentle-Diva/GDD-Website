@@ -7,6 +7,6 @@ text-align:center;
 }
 
 .pain-list{list-style:none;display:flex;flex-direction:column}
-.pain-list li{padding:1.1rem 0;border-bottom:1px solid rgba(37, 32, 56, 0.1);border-top:1px solid transparent;font-family:var(--font-heading);font-weight:520;font-size:1.15rem;color:var(--body-text);transition:color .2s ease,padding-left .2s ease;cursor:default}
+.pain-list li{padding:1.1rem 0;border-bottom:1px solid rgba(37, 32, 56, 0.1);border-top:1px solid transparent;font-family:var(--font-heading);font-weight:500;font-size:1.15rem;color:var(--body-text);transition:color .2s ease,padding-left .2s ease;cursor:default}
 .pain-list li:first-child{border-top:1px solid rgba(56, 52, 70, 0.1)}
 .pain-list li:hover{color:#7a6f1f;padding-left:0.6rem}
